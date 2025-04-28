@@ -1,0 +1,420 @@
+
+/* style.css */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Color Variables */
+:root {
+  --dark-teal: #1F2F32;
+  --bright-orange: #FF7A00;
+  --white: #FFFFFF;
+  --light-grey: #F5F5F5;
+  --black: #111111;
+  --warm-beige: #FBE8D3;
+}
+
+/* Base */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--white);
+  color: var(--black);
+  line-height: 1.6;
+}
+section {
+  padding: 60px 0;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--dark-teal) !important;
+}
+.navbar-brand,
+.nav-link {
+  color: var(--white) !important;
+}
+.nav-link:hover,
+.nav-link.active {
+  color: var(--bright-orange) !important;
+}
+
+/* Hero Carousel */
+#heroCarousel .carousel-caption {
+  background: rgba(17, 17, 17, 0.5);
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+#heroCarousel .carousel-caption h5
+ {
+
+        color: #FF7A00;
+        font-size: 2.5rem; /* Bigger heading */
+        font-weight: 700; /* Bold */
+        text-shadow: 2px 2px 6px #000; /* Stronger shadow for better readability */
+        margin-bottom: 1rem;
+      }
+
+
+
+      
+#heroCarousel .carousel-caption p {
+    color: #f8f9fa; /* Light gray text */
+    font-size: 1.5rem; /* Bigger paragraph text */
+    font-weight: 400;
+    text-shadow: 1px 1px 4px #000;
+  }
+
+#heroCarousel .btn-light {
+  background-color: var(--white);
+  color: var(--dark-teal);
+  border: 2px solid var(--bright-orange);
+}
+#heroCarousel .btn-light:hover {
+  background-color: var(--bright-orange);
+  color: var(--white);
+}
+
+
+
+/* Card Styling */
+.card {
+    border: none;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, background-color 0.4s ease;
+    background-color: var(--white); /* default background */
+    overflow: hidden; /* Hide any overflow during zoom */
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    background-color: var(--light-grey); /* Subtle background color on hover */
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Card title color transition */
+  .card-title {
+    color: var(--dark-teal);
+    transition: color 0.4s ease, transform 0.4s ease, opacity 0.4s ease;
+    opacity: 1; /* Start invisible */
+    transform: translateY(0); /* Start from below */
+  }
+  
+  .card:hover .card-title {
+    color: var(--primary-color); /* Color change on hover */
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Slide up */
+  }
+  
+  /* Card text color transition */
+  .card-text {
+    color: var(--black);
+    transition: color 0.4s ease, transform 0.4s ease, opacity 0.4s ease;
+    opacity: 1; /* Start invisible */
+    transform: translateY(0); /* Start from below */
+  }
+  
+  .card:hover .card-text {
+    color: var(--dark-grey); /* Optional softer tone on hover */
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Slide up */
+  }
+  
+  /* Optional image zoom effect */
+  .card-img-top {
+    transition: transform 0.4s ease;
+  }
+  
+  .card:hover .card-img-top {
+    transform: scale(1.08);
+  }
+
+
+  /* Card Styling */
+.card {
+    border: none;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, background-color 0.4s ease;
+    background-color: var(--white); /* default background */
+    overflow: hidden; /* Hide any overflow during zoom */
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+    background-color: var(--light-grey); /* Background color change */
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15); /* Soft shadow on hover */
+  }
+  
+  /* Card title color transition */
+  .card-title {
+    color: var(--dark-teal); /* Default color for title */
+    transition: color 0.4s ease, transform 0.4s ease, opacity 0.4s ease;
+    opacity: 1; /* Start invisible */
+    transform: translateY(0); /* Start from below */
+  }
+  
+  .card:hover .card-title {
+    color: var(--primary-color); /* Color change on hover */
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Slide up */
+  }
+  
+  /* Card text color transition */
+  .card-text {
+    color: var(--black); /* Default text color */
+    transition: color 0.4s ease, transform 0.4s ease, opacity 0.4s ease;
+    opacity: 1; /* Start invisible */
+    transform: translateY(0); /* Start from below */
+  }
+  
+  .card:hover .card-text {
+    color: var(--dark-grey); /* Softer tone on hover */
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Slide up */
+  }
+  
+  /* Optional image zoom effect */
+  .card-img-top {
+    transition: transform 0.4s ease;
+  }
+  
+  .card:hover .card-img-top {
+    transform: scale(1.1); /* Slight zoom-in effect for the image */
+  }
+
+/* About Preview */
+.about-preview {
+  padding: 60px 0;
+}
+.about-preview h2 {
+  color: var(--dark-teal);
+}
+.about-preview .btn-primary {
+  background-color: var(--bright-orange);
+  border: none;
+  color: var(--white);
+}
+.about-preview .btn-primary:hover {
+  background-color: #e66e00;
+}
+
+
+
+/* Events */
+.ftco-section {
+  background-color: var(--light-grey);
+}
+card {
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  .card-title, .card-text {
+    transition: all 0.3s ease;
+  }
+  
+  .card:hover .card-title, .card:hover .card-text {
+    color: #0056b3;
+  }
+  
+  .card-img-top {
+    height: 250px;
+    object-fit: cover;
+  }
+
+/* Our Team (Staff) */
+.staff-section {
+  background-color: var(--white);
+  padding: 60px 0;
+  text-align: center;
+}
+.staff-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.staff-member {
+  background-color: var(--light-grey);
+  padding: 20px;
+  border-radius: 10px;
+}
+.staff-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* Staff hover animations */
+.staff-member {
+    background-color: var(--light-grey);
+    padding: 20px;
+    border-radius: 10px;
+    /* prepare for transform & shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .staff-member:hover {
+    /* lift up and slightly enlarge */
+    transform: translateY(-8px) scale(1.03);
+    /* add a soft shadow */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Image pop on hover */
+  .staff-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .staff-member:hover .staff-image {
+    /* slightly zoom & rotate the image */
+    transform: scale(1.1) rotate(2deg);
+  }
+
+/* Gallery Page */
+.gallery-section {
+  background-color: var(--white);
+  padding: 60px 0;
+  text-align: center;
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+.gallery-grid img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* Make form & map sit side by side */
+.contact-body {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    align-items: start;
+    margin-top: 30px;
+  }
+  
+  /* Existing styling for form & map */
+  .contact-form {
+    background-color: var(--light-grey);
+    padding: 30px;
+    border-radius: 10px;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  .contact-form button {
+    background-color: var(--bright-orange);
+    color: var(--white);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .contact-form button:hover {
+    background-color: #e66e00;
+  }
+  
+  /* map-container already defined, but ensure full width */
+  .map-container {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  /* Keep the “container” utility so it centers & adds side padding */
+  .contact-section.container {
+    max-width: 1100px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+  social-icons {
+     margin-top: 30px;
+     text-align: center;
+    }
+    .social-icons a {
+     margin: 0 10px;
+     color: var(--dark-teal);
+     text-decoration: none;
+     font-weight: 600;
+    }
+    .social-icons a:hover {
+     color: var(--bright-orange);
+    }
+/* Footer */
+.footer-container {
+  background-color: var(--dark-teal);
+  color: var(--white);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 40px 20px;
+}
+.footer-section {
+  flex: 1 1 200px;
+  margin: 10px;
+}
+.footer-section h3 {
+  margin-bottom: 15px;
+}
+.footer-section a {
+  color: var(--white);
+  text-decoration: none;
+}
+.footer-section a:hover {
+  color: var(--bright-orange);
+}
+.footer-bottom {
+  background-color: rgba(31,47,50,0.9);
+  color: var(--white);
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Ensure your swiper has a visible height */
+.mySwiper {
+    width: 100%;
+    height: 300px;
+  }
+  
+  /* Slide images fill the container */
+  .mySwiper .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  #heroCarousel .carousel-caption { text-align: center; }
+  .about-preview { flex-direction: column; }
+  .staff-gallery { grid-template-columns: repeat(auto-fit, minmax(120px,1fr)); }
+}
